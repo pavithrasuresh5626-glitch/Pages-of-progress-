@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pavithra S — Personal Favourites</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}body{background:#fbf5e4;color:#3b2f16;font-family:'Playfair Display',Georgia,serif;overflow-x:hidden}
+.frame{position:fixed;inset:10px;border:1px solid #c9a24a;pointer-events:none;z-index:8}.frame::after{content:'';position:absolute;inset:4px;border:1px solid #e3cd8a}
+.grain{position:fixed;inset:-50%;z-index:9;pointer-events:none;opacity:.07;mix-blend-mode:multiply;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");animation:gr .6s steps(6) infinite}
+@keyframes gr{0%{transform:translate(0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,3%)}80%{transform:translate(3%,-1%)}}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16vh 24px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0,#f6e2a0 0,transparent 65%)}
+.hero::before{content:'';position:absolute;top:-10%;left:50%;width:150%;height:130%;background:conic-gradient(from 168deg at 50% 0,transparent 0,rgba(212,169,55,.28) 8deg,transparent 20deg);transform-origin:50% 0;animation:sw 7s ease-in-out infinite alternate}
+@keyframes sw{from{transform:translateX(-50%) rotate(-16deg)}to{transform:translateX(-50%) rotate(16deg)}}
+.pre{letter-spacing:.3em;font-size:.72rem;text-transform:uppercase;color:#8a6410;opacity:0;animation:fi 1.6s 1s forwards;position:relative}
+.pre.c{animation-delay:5s}
+h1{font:400 clamp(3.4rem,16vw,10rem)/.95 'Bebas Neue',Impact,sans-serif;text-transform:uppercase;margin:20px 0;overflow-wrap:anywhere;position:relative;background:linear-gradient(100deg,#7a5608 20%,#e6c25a 40%,#fff1b8 50%,#e6c25a 60%,#7a5608 80%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;animation:tt 3s 2s cubic-bezier(.2,.7,.2,1) forwards,sh 5s 5s linear infinite}
+@keyframes tt{from{opacity:0;letter-spacing:.5em;filter:blur(14px);transform:scale(1.25)}to{opacity:1;letter-spacing:.03em;filter:none;transform:none}}
+@keyframes sh{to{background-position:-250% 0}}
+@keyframes fi{to{opacity:1}}
+.dn{margin-top:40px;color:#b8891f;opacity:0;animation:fi 1s 5.5s forwards,bn 1.6s 5.5s infinite;position:relative}
+@keyframes bn{50%{transform:translateY(8px)}}
+.gn{padding:10vh 22px 0;max-width:1000px;margin:auto}
+.gn h2{font:400 2rem 'Bebas Neue',sans-serif;letter-spacing:.08em;color:#8a6410;border-bottom:1px solid #d9c07a;padding-bottom:8px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.p{min-height:290px;padding:14px 12px;display:flex;flex-direction:column;text-align:center;background:linear-gradient(165deg,hsl(var(--h) 60% 91%),#fffdf5 70%);border:1px solid #c9a24a;outline:1px solid #e3cd8a;outline-offset:-5px;box-shadow:0 10px 24px #b8891f2e}
+.p small{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#8a6410}
+.p h3{font:400 2rem/1 'Bebas Neue',sans-serif;margin:auto 0 8px;overflow-wrap:anywhere}
+.s{color:#c0901f;font-size:1.05rem}.s i{color:#e0d2a6;font-style:normal}
+.p p{font-style:italic;font-size:.76rem;line-height:1.45;margin:8px 0;color:#5a4a28}
+.p em{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#8a6410;font-style:normal}
+.p{text-decoration:none;color:inherit}.p:hover h3{color:#8a6410}.po[hidden]{display:none}.p.im{min-height:0}.po{display:block;width:calc(100% + 24px);max-width:none;margin:-14px -12px 12px;aspect-ratio:2/3;object-fit:cover}.p.im h3{font-size:1.5rem;margin:6px 0}
+.rv{opacity:0;transform:translateY(36px) rotate(-1deg);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+.wl{max-width:1000px;margin:auto;padding:10vh 22px 0;text-align:center}.wl h2{font:400 2rem 'Bebas Neue',sans-serif;letter-spacing:.08em;color:#8a6410;border-bottom:1px solid #d9c07a;padding-bottom:8px;margin-bottom:16px;text-align:left}.wl p{font-style:italic;line-height:1.7;max-width:36rem;margin:0 auto 20px;color:#5a4a28}.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.chips span{border:1px dashed #c9a24a;background:#fffdf5;border-radius:999px;padding:9px 16px;font-size:.85rem;color:#5a4a28}
+.end{text-align:center;padding:20vh 24px 24vh}
+.end h2{font:400 clamp(2.6rem,12vw,6rem)/1 'Bebas Neue',sans-serif;color:#8a6410;letter-spacing:.08em;overflow-wrap:anywhere}
+.end p{margin-top:14px;color:#7d6d4a;letter-spacing:.12em;font-size:.78rem;text-transform:uppercase;line-height:1.9}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition:none!important}}
+</style></head><body>
+<div class="grain"></div><div class="frame"></div>
+<section class="hero"><p class="pre">The personal selection of</p><h1>Pavithra S</h1><p class="pre c">Favourite Films &amp; Reads · CSE-2</p><div class="dn">▼</div></section>
+<section class="gn"><h2 class="rv">🎬 Drama</h2><div class="grid"><a class="p rv im" href="https://en.wikipedia.org/wiki/Life_of_Pi" target="_blank" rel="noopener" data-t="Life of Pi" title="Open on Wikipedia" style="--h:246;transition-delay:0s"><img class="po" hidden  alt="Life of Pi poster" onload="this.hidden=false" onerror="this.remove()"><small>Drama</small><h3>Life of Pi</h3><div class="s">★★★★★<i></i></div><p>“It tells us how we should see our life ”</p><em>Pavithra S</em></a></div></section>
+<section class="wl"><h2 class="rv">Still on my watchlist</h2><p class="rv">I haven't chosen a favourite in these genres yet, and I'm looking forward to changing that. My watchlist is long and growing, and I'm going to work through them one film at a time.</p><div class="chips rv"><span>😂 Comedy</span><span>🔪 Thriller / Mystery</span><span>👻 Horror</span><span>❤️ Romance</span><span>⚔️ Action / Adventure</span><span>🏛️ Historical / Period</span><span>🏆 Sports</span><span>🎵 Musical</span><span>🚀 Sci-Fi</span><span>🎭 Biopic</span><span>🎞️ Documentary</span><span>🐭 Animated</span><span>📺 TV Series</span><span>🔥 Motivational</span><span>⭐ My Most Favourite Movies</span></div></section>
+<section class="end"><h2 class="rv">Pavithra S</h2><p class="rv">Curated and signed<br>1 titles · average 5.0 ★<br>11 November 2026</p></section>
+<script>const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.rv').forEach(x=>o.observe(x));
+var cs=[].slice.call(document.querySelectorAll('.p[data-t]')).filter(function(c){return c.dataset.t}),ts=[];
+cs.forEach(function(c){if(ts.indexOf(c.dataset.t)<0)ts.push(c.dataset.t)});
+for(var i=0;i<ts.length;i+=50)fetch('https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=300&titles='+encodeURIComponent(ts.slice(i,i+50).join('|'))).then(function(r){return r.json()}).then(function(r){
+var q=r.query||{},m={},im={};(q.normalized||[]).concat(q.redirects||[]).forEach(function(x){m[x.from]=x.to});
+Object.keys(q.pages||{}).forEach(function(k){var g=q.pages[k];if(g.thumbnail)im[g.title]=g.thumbnail.source});
+cs.forEach(function(c){var t=c.dataset.t;t=m[t]||t;t=m[t]||t;var u=im[t],p=c.querySelector('.po');if(u&&p){p.hidden=true;p.src=u}})}).catch(function(){});</script>
+</body></html>
